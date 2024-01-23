@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import {FaBars, FaReact} from 'react-icons/fa'
 import {HiX} from 'react-icons/hi'
+import './styles.scss'
 
 const data = [
     {
@@ -39,7 +40,7 @@ const Navbar = () => {
             <FaReact size={30} />
             </Link>
         </div>
-        <ul className='navbar__container__menu'>
+        <ul className= {`navbar__container__menu ${toggle ? 'active' : ''}`}>
             {
                 data.map((item, index) => {
                     return (
