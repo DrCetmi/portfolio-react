@@ -1,0 +1,33 @@
+import {Routes, Route} from 'react-router-dom';
+import './App.css';
+import Home from './containers/home/Index';
+import About from './containers/about/Index';
+import Resume from './containers/resume/Index';
+import Skills from './containers/skills/Index';
+import Portfolio from './containers/portfolio/Index';
+import Contact from './containers/contact/Index';
+import Navbar from './components/navBar/Index';
+
+
+
+function App() {
+  return (
+    <div className='App'>
+
+
+    <Navbar/>
+
+     <Routes>
+        <Route index path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path='/resume' element={<Resume/>} />
+        <Route path='/skills' element={<Skills/>} />
+        <Route path='/portfolio' element={<Portfolio/>} />
+        <Route path='/contact' element={<Contact/>} />
+
+    </Routes>
+    </div>
+  );
+};
+
+export default App;
