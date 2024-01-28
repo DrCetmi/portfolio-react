@@ -18,7 +18,13 @@
         &___logo{
             color: var(--yellow-theme-main-color);
             cursor: pointer;
+           
         }
+        .costum-img {
+            width: 50px; /* İstediğiniz genişliği belirtin */
+            height: auto; /* Otomatik yükseklik ayarı */
+            margin-right: 10px; /* İstediğiniz sağ boşluk ayarı */
+          }
 
         &__menu{
             display: flex;
@@ -55,6 +61,7 @@
         }
     }
 }
+
 
 .nav-icon{
     display: none;
