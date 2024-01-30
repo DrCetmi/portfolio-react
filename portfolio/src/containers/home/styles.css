@@ -3,7 +3,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
 }
 .home__text-wrapper {
@@ -14,12 +14,22 @@
   align-self: start;
   padding-left: 50px;
 }
-.home__text-wrapper h1, .home__text-wrapper h2 {
+.home__text-wrapper h1 {
   color: #fff;
   margin: 0;
   font-weight: 500;
-  font-size: 7rem;
-  line-height: 10rem;
+  font-size: 6rem;
+  line-height: 5rem;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingEffectAnimation 2.5s steps(30, end);
+}
+.home__text-wrapper p {
+  color: var(--yellow-theme-main-color);
+  margin: 0;
+  font-weight: 500;
+  font-size: 3rem;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
@@ -28,12 +38,13 @@
 .home__contact-me {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  align-items: start;
+  margin: 10px 50px;
 }
 .home__contact-me button {
   cursor: pointer;
-  padding: 10px 70px;
-  font-size: 2rem;
+  padding: 10px 60px;
+  font-size: 1.5rem;
   background: transparent;
   color: var(--yellow-theme-main-color);
   border: 1.5px solid var(--yellow-theme-main-color);
@@ -47,9 +58,22 @@
 .home__img-home img {
   width: 850px;
   position: fixed;
-  left: 5;
+  right: 0;
   bottom: 0;
-  opacity: 0.4;
+  opacity: 0.2;
+}
+
+.social-icons {
+  cursor: pointer;
+  margin: 10px 50px;
+}
+.social-icons .icon {
+  color: var(--yellow-theme-main-color);
+  margin-left: 20px;
+}
+.social-icons .icon:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 550px) {
