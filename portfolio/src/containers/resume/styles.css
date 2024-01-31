@@ -1,0 +1,85 @@
+.resume {
+  height: 100%;
+}
+
+.timeline {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+.timeline__experience, .timeline__education {
+  width: 50%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timeline__experience__header-text, .timeline__education__header-text {
+  display: inline-block;
+  color: var(--yellow-theme-sub-text-color);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-bottom: 2px solid var(--yellow-theme-main-color);
+}
+.timeline__experience__header-text::before, .timeline__experience__header-text::after, .timeline__education__header-text::before, .timeline__education__header-text::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 2px;
+  height: 5px;
+  background-color: var(--yellow-theme-main-color);
+}
+.timeline__experience__header-text::before, .timeline__education__header-text::before {
+  left: 0;
+}
+.timeline__experience__header-text::after, .timeline__education__header-text::after {
+  right: 0;
+}
+.timeline__experience__vertical-timeline-element, .timeline__education__vertical-timeline-element {
+  padding: 0 0 30px 0;
+}
+.timeline__experience__vertical-timeline-element:last-child, .timeline__education__vertical-timeline-element:last-child {
+  padding-bottom: 0;
+}
+.timeline__experience .vertical-timeline-element-title-wrapper, .timeline__education .vertical-timeline-element-title-wrapper {
+  display: flex;
+  align-items: center;
+}
+.timeline__experience .vertical-timeline-element-title-wrapper h3, .timeline__education .vertical-timeline-element-title-wrapper h3 {
+  font-size: 18px;
+}
+.timeline__experience p, .timeline__education p {
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+.timeline__experience .vertical-timeline-element-content, .timeline__education .vertical-timeline-element-content {
+  box-shadow: none;
+}
+.timeline__experience .vertical-timeline-element-content-arrow, .timeline__education .vertical-timeline-element-content-arrow {
+  border-right-color: var(--yellow-theme-main-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+  }
+  .timeline__experience, .timeline__education {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .timeline__experience__header-text, .timeline__education__header-text {
+    font-size: 18px;
+  }
+  .timeline__experience .vertical-timeline-element-title-wrapper h3, .timeline__education .vertical-timeline-element-title-wrapper h3 {
+    font-size: 16px;
+  }
+  .timeline__experience p, .timeline__education p {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=styles.css.map */

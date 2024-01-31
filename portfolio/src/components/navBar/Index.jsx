@@ -14,17 +14,17 @@ const data = [
     to: '/about'
   },
   {
-    label: 'Skills',
+    label: 'My Skills',
     to: '/skills'
   },
   {
-    label: 'Resume',
+    label: 'My Resume',
     to: '/resume'
   },
-  {
-    label: 'Portfolio',
-    to: '/portfolio'
-  },
+  // {
+  //   label: 'Portfolio',
+  //   to: '/portfolio'
+  // },
   {
     label: 'Contact',
     to: '/contact'
