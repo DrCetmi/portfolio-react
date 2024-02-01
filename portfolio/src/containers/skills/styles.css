@@ -1,28 +1,57 @@
+.skills {
+  position: relative;
+  top: 80px;
+  margin: 100px 0;
+  z-index: 1;
+}
 .skills .content-wrapper {
   display: flex;
-  flex-direction: column;
   padding: 20px;
   gap: 20px;
-  width: 100%;
 }
 .skills .inner-content {
-  align-items: center;
-}
-.skills .box {
-  width: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.skills .category-text {
+  display: inline-block;
+  color: var(--yellow-theme-main-color);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-bottom: 2px solid var(--yellow-theme-main-color);
+}
+.skills .category-text::before,
+.skills .category-text::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 2px;
+  height: 5px;
+  background-color: var(--yellow-theme-main-color);
+  bottom: -1px;
+}
+.skills .category-text::before {
+  left: 0;
+}
+.skills .category-text::after {
+  right: 0;
+}
+.skills .progressbar-container {
+  width: 100%;
 }
 .skills .progressbar-wrapper {
-  width: 100%;
-  display: flex;
-  padding: 20px 0 0 0;
-  flex-direction: column;
-  align-items: center;
+  padding: 50px 0 0 0;
 }
 .skills p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 0 0 10px;
   font-weight: 500;
   text-transform: uppercase;
@@ -34,4 +63,16 @@
 }
 .skills .rc-progress-line {
   width: 100% !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills .content-wrapper {
+    flex-direction: column;
+  }
+  .skills .inner-content {
+    width: 100%;
+  }
+  .skills .progressbar-container {
+    margin-bottom: 2rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

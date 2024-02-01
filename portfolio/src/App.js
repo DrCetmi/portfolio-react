@@ -12,6 +12,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; 
 
 
+
 function App() {
   const location = useLocation();
   console.log(location);

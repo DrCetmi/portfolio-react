@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .navbar {
   background-color: var(--yellow-theme-nav-background-color);
   height: 80px;
@@ -6,7 +5,9 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 .navbar__container {
   display: flex;
@@ -21,9 +22,9 @@
   cursor: pointer;
 }
 .navbar__container .costum-img {
-  width: 50px; /* İstediğiniz genişliği belirtin */
-  height: auto; /* Otomatik yükseklik ayarı */
-  margin-right: 10px; /* İstediğiniz sağ boşluk ayarı */
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 .navbar__container__menu {
   display: flex;

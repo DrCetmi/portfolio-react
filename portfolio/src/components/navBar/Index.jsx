@@ -1,33 +1,33 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa';
-import { HiX } from 'react-icons/hi';
-import './styles.scss';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+import { HiX } from "react-icons/hi";
+import "./styles.scss";
 
 const data = [
   {
-    label: 'Home',
-    to: '/'
+    label: "Home",
+    to: "/",
   },
   {
-    label: 'About',
-    to: '/about'
+    label: "About",
+    to: "/about",
   },
   {
-    label: 'My Skills',
-    to: '/skills'
+    label: "My Skills",
+    to: "/skills",
   },
   {
-    label: 'My Resume',
-    to: '/resume'
+    label: "My Resume",
+    to: "/resume",
   },
   // {
   //   label: 'Portfolio',
   //   to: '/portfolio'
   // },
   {
-    label: 'Contact',
-    to: '/contact'
+    label: "Contact",
+    to: "/contact",
   },
 ];
 
@@ -40,23 +40,25 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className='navbar'>
-        <div className='navbar__container'>
-          {/* <FaReact size={30} /> */}
-          <Link to={'/'} className='navbar__container__logo'>
+      <nav className="navbar">
+        <div className="navbar__container">
+          <Link to={"/"} className="navbar__container__logo">
             <img src="/logo.png" alt="Logo" className="costum-img" />
           </Link>
         </div>
-        <ul className={`navbar__container__menu ${toggle ? 'active' : ''}`}>
+        <ul className={`navbar__container__menu ${toggle ? "active" : ""}`}>
           {data.map((item, index) => (
-            <li key={index} className='navbar__container__menu__item'>
-              <Link className='navbar__container__menu__item__links' to={item.to}>
+            <li key={index} className="navbar__container__menu__item">
+              <Link
+                className="navbar__container__menu__item__links"
+                to={item.to}
+              >
                 {item.label}
               </Link>
             </li>
           ))}
         </ul>
-        <div className='nav-icon' onClick={handleToggleIcon}>
+        <div className="nav-icon" onClick={handleToggleIcon}>
           {toggle ? <HiX size={30} /> : <FaBars size={30} />}
         </div>
       </nav>

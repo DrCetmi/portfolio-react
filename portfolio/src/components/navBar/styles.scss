@@ -5,7 +5,9 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 
     &__container{
         display: flex;
@@ -21,9 +23,9 @@
            
         }
         .costum-img {
-            width: 50px; /* İstediğiniz genişliği belirtin */
-            height: auto; /* Otomatik yükseklik ayarı */
-            margin-right: 10px; /* İstediğiniz sağ boşluk ayarı */
+            width: 50px;
+            height: auto; 
+            margin-right: 10px; 
           }
 
         &__menu{

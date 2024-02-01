@@ -1,10 +1,11 @@
 .home {
   position: relative;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  z-index: 1;
 }
 .home__text-wrapper {
   display: flex;
@@ -18,7 +19,7 @@
   color: #fff;
   margin: 0;
   font-weight: 500;
-  font-size: 6rem;
+  font-size: 7rem;
   line-height: 5rem;
   position: relative;
   overflow: hidden;
@@ -27,9 +28,9 @@
 }
 .home__text-wrapper p {
   color: var(--yellow-theme-main-color);
-  margin: 0;
+  margin-top: 20px;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 3.5rem;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
@@ -56,11 +57,16 @@
   color: #000000;
 }
 .home__img-home img {
-  width: 850px;
+  width: 100%;
+  height: auto;
   position: fixed;
   right: 0;
   bottom: 0;
-  opacity: 0.2;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .social-icons {
@@ -76,10 +82,26 @@
   cursor: pointer;
 }
 
+.about-main {
+  margin-top: 0;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  z-index: 1;
+}
+
 @media only screen and (max-width: 550px) {
   .home__text-wrapper h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 5rem;
+  }
+  .home__text-wrapper q {
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 80%;
   }
 }
 @media only screen and (min-width: 551px) and (max-width: 768px) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import PageHeaderContent from '../../components/pageHeader';
+import PageHeaderContent from '../../components/pageHeader/Index';
 import {BsInfoCircleFill} from 'react-icons/bs'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';

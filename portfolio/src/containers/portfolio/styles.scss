@@ -1,0 +1,52 @@
+.portfolio {
+  position: relative;
+  top: 80px;
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.swiper-slide p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 15px;
+  line-height: 1.5;
+  font-size: 15px;
+  margin: 0 auto;
+  background-color: var(--yellow-theme-main-color);
+}
+.slide-link {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  left: 0;
+  padding: 20px;
+  font-size: 2.8em;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  background-color: rgba(240, 248, 255, 0.218);
+}
+.slide-link:hover {
+  color: var(--yellow-theme-main-color);
+}
