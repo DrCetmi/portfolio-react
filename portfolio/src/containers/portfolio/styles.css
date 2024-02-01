@@ -54,4 +54,15 @@
 
 .slide-link:hover {
   color: var(--yellow-theme-main-color);
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--yellow-theme-main-color);
+  margin: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed var(--yellow-theme-main-color);
 }/*# sourceMappingURL=styles.css.map */

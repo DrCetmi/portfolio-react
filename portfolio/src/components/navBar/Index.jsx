@@ -21,10 +21,10 @@ const data = [
     label: "My Resume",
     to: "/resume",
   },
-  // {
-  //   label: 'Portfolio',
-  //   to: '/portfolio'
-  // },
+  {
+    label: "Portfolio",
+    to: "/portfolio",
+  },
   {
     label: "Contact",
     to: "/contact",

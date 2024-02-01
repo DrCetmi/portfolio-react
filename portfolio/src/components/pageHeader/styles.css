@@ -1,15 +1,11 @@
 .wrapper {
   display: flex;
+  width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 15px;
   margin-bottom: 50px;
-  background-color: rgba(255, 255, 255, 0.4274509804);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 20px auto;
-  border-radius: 10px;
+  border-bottom: 2px dashed var(--yellow-theme-main-color);
 }
 .wrapper h2 {
   font-size: 36px;
@@ -21,22 +17,6 @@
   position: relative;
   text-transform: uppercase;
   padding: 5px 10px;
-  border-bottom: 2px solid var(--yellow-theme-main-color);
-}
-.wrapper h2::before,
-.wrapper h2::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 5px;
-  background-color: var(--yellow-theme-main-color);
-  bottom: -1px;
-}
-.wrapper h2::before {
-  left: 0px;
-}
-.wrapper h2::after {
-  right: 0px;
 }
 .wrapper span svg {
   color: var(--yellow-theme-main-color);

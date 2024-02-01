@@ -4,11 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
 import TypedText from "./TypedText";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import About from "../about/Index";
-import Skills from "../skills/Index";
-import Resume from "../resume/Index";
-import Contact from "../contact/Index";
-import Portfolio from "../portfolio/Index";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -37,11 +32,6 @@ const Home = () => {
             />
           </p>
         </div>
-        {/* <q>
-          Ich habe umfassende Erfahrung in der Gestaltung und Implementierung
-          komplexer Systeme und bin es gewohnt, in anspruchsvollen Situationen
-          einen logischen und lösungsorientierten Ansatz zu verfolgen.
-        </q> */}
         <Animate
           play
           duration={1.5}
@@ -81,11 +71,6 @@ const Home = () => {
           <img src={require("./hero11.png")} />
         </div>
       </div>
-      <Portfolio />
-      <About />
-      <Skills />
-      <Resume />
-      <Contact />
     </section>
   );
 };

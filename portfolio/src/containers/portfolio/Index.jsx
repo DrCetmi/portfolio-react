@@ -1,14 +1,12 @@
 import PageHeaderContent from "../../components/pageHeader/Index";
-// import { BsInfoCircleFill } from "react-icons/bs";
-
+import { BsInfoCircleFill } from "react-icons/bs";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
 import "./styles.scss";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Mousewheel } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
@@ -16,7 +14,7 @@ const Portfolio = () => {
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
         headerText="Portfolio"
-        // icon={<BsInfoCircleFill size={40} />}
+        icon={<BsInfoCircleFill size={40} />}
       />
       <div className="slide">
         <Swiper
@@ -104,6 +102,108 @@ const Portfolio = () => {
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </SwiperSlide>
+        </Swiper>
+        <div>
+          <h3>Wordpress-Project</h3>
+        </div>
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src={require("./eurostarav.png")} alt="" />
+            <Link
+              to="https://github.com/DrCetmi/ShrugmanGame"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            ></Link>
+            <p>
+              Shrugman Game ist ein textbasiertes Spiel, entwickelt in
+              JavaScript und ausgeführt in einer Node.js-Umgebung, bei dem eine
+              Person versucht, ein geheimes Wort zu erraten.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={require("./hikmet.png")} />
+            <Link
+              to="https://github.com/DrCetmi/Spotify-Clone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            ></Link>
+            <p>
+              Willkommen beim Spotify-Klon-Projekt unter Verwendung der Deezer
+              API(oder Rapid API)! Dieses Projekt zielt darauf ab, einige
+              Funktionen von Spotify mithilfe der Deezer API nachzubilden.
+              Dieses Projekt ist eine Teamleistung.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={require("./hizmet.png")} />
+            <Link
+              to="https://github.com/DrCetmi/Netflix-clone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            >
+              hizmetten
+            </Link>
+            <p>
+              Dieses umfangreiche Projekt einer Netflix-Filmanwendung integriert
+              nicht nur die OMDB API für den Abruf von Filmdaten, sondern
+              enthält auch eine lokale Authentifizierung für eine Login-Seite.
+              Ziel ist es, Benutzern eine personalisierte Erfahrung zu bieten,
+              indem sie sich anmelden können, um ihre bevorzugten Filme zu
+              speichern und mit anderen Benutzern zu interagieren.
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <img src={require("./nefret.png")} />
+            <Link
+              to="https://github.com/DrCetmi/Netflix-clone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            >
+              NefretSuçları
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            <Link
+              to="https://github.com/DrCetmi/Netflix-clone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            >
+              İnkişaf
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            <Link
+              to="https://github.com/DrCetmi/Netflix-clone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            >
+              mizan
+            </Link>
           </SwiperSlide>
         </Swiper>
       </div>

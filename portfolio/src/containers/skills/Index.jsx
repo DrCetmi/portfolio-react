@@ -9,7 +9,10 @@ import "./styles.scss";
 const Skills = () => {
   return (
     <div id="skills" className="skills">
-      <PageHeaderContent headerText="My Skills" />
+      <PageHeaderContent
+        headerText="My Skills"
+        icon={<BsInfoCircleFill size={40} />}
+      />
 
       <div className="content-wrapper">
         {skillsData.map((item, i) => (

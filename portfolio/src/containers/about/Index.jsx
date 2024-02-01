@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeader/Index";
-// import { BsInfoCircleFill } from "react-icons/bs";
+import { BsInfoCircleFill } from "react-icons/bs";
 import "./styles.scss";
 import { Animate } from "react-simple-animate";
 import { DiApple, DiAndroid } from "react-icons/di";
@@ -40,7 +40,7 @@ const About = () => {
     <section id="about" className="about">
       <PageHeaderContent
         headerText="About Me"
-        // icon={<BsInfoCircleFill size={40} />}
+        icon={<BsInfoCircleFill size={40} />}
       />
       <Animate
         play

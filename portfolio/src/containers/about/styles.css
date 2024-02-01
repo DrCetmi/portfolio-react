@@ -1,10 +1,7 @@
 .about {
   position: relative;
   top: 80px;
-  margin: 200px 0;
-  height: -moz-max-content;
-  height: max-content;
-  z-index: 1;
+  height: 100%;
 }
 .about h3 {
   margin-bottom: 10px;
