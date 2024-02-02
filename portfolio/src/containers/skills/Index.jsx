@@ -13,7 +13,6 @@ const Skills = () => {
         headerText="My Skills"
         icon={<BsInfoCircleFill size={40} />}
       />
-
       <div className="content-wrapper">
         {skillsData.map((item, i) => (
           <div className="inner-content" key={i}>

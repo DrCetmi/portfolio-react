@@ -57,8 +57,8 @@
   font-size: 18px;
 }
 .timeline__experience p, .timeline__education p {
-  font-size: 18px;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 2rem;
 }
 .timeline__experience .vertical-timeline-element-content, .timeline__education .vertical-timeline-element-content {
   box-shadow: none;

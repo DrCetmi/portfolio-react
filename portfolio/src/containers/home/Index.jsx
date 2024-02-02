@@ -37,7 +37,7 @@ const Home = () => {
           duration={1.5}
           delay={1}
           start={{
-            transform: "translateY(550px)",
+            transform: "translateY(750px)",
           }}
           ende={{
             transform: "translatex(0px)",
@@ -68,7 +68,7 @@ const Home = () => {
           </div>
         </Animate>
         <div className="home__img-home">
-          <img src={require("./hero11.png")} />
+          <img src={require("../../images/hero11.png")} />
         </div>
       </div>
     </section>

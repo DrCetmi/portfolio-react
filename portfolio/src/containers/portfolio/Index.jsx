@@ -1,12 +1,11 @@
 import PageHeaderContent from "../../components/pageHeader/Index";
 import { BsInfoCircleFill } from "react-icons/bs";
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./styles.scss";
-import { EffectCoverflow, Pagination, Mousewheel } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {

@@ -98,12 +98,12 @@ function App() {
     }),
     [],
   );
-  const renderParticleJsInHomePage = location.pathname === "/";
+  // const renderParticleJsInHomePage = location.pathname === "/";
   if (init) {
     return (
       <div className='App'>
         {
-          renderParticleJsInHomePage &&  <Particles
+          <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
@@ -123,8 +123,6 @@ function App() {
           </div>
     );
   }
-
-  return <></>;
 };
 
 export default App;
