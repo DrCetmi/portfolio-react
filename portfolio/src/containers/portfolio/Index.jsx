@@ -90,18 +90,82 @@ const Portfolio = () => {
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <Link
+              to="https://github.com/Web-Kids/spa-router-band-landing-page-DrCetmi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            >
+              Router-band-landing-page(React)
+            </Link>
+            <p>
+              Diese React-Anwendung zielt darauf ab, eine dynamische
+              Einzelseitenanwendung zu erstellen, um die Mitglieder und Bilder
+              einer Musikband mithilfe von react-router anzuzeigen.
+            </p>
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            <Link
+              to="https://github.com/Web-Kids/spa-react-weather-app-DrCetmi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            >
+              Weather App (React)
+            </Link>
+            <p>
+              Eine einfache Wetteranwendung erstellen, die die aktuellen
+              Wetterinformationen basierend auf dem Standort des Benutzers oder
+              einer ausgewählten Stadt anzeigt, wobei Funktionen wie die Anzeige
+              von Temperatur, Wetterbedingungen, Luftfeuchtigkeit,
+              Windgeschwindigkeit, Benutzereingabe für den Standort, Abrufen von
+              Wetterdaten über eine Wetter-API, Anzeige eines Ladeindikators
+              während des Abrufs und Fehlerbehandlung für fehlgeschlagene
+              Datenabfragen enthalten sind.
+            </p>
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            <Link
+              to="https://github.com/Web-Kids/spa-component-lifecycle-DrCetmi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            >
+              Lifecyle (React)
+            </Link>
+            <p>
+              Diese Übung beinhaltet die Umsetzung von
+              React-Komponenten-Lebenszyklen in einer Anwendung. Benutzer können
+              die Namen von GitHub-Organisationen abrufen und durchsuchen und
+              Details sowie Repositories der ausgewählten Organisationen
+              anzeigen lassen.
+            </p>
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            <Link
+              to="https://github.com/Web-Kids/spa-component-feedbackform-DrCetmi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            >
+              Feedback Form (React)
+            </Link>
+            <p>In dieser Arbeit wurde ein Feedback-Formular erstellt.</p>
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            <Link
+              to="https://github.com/Web-Kids/spa-react-to-do-list-DrCetmi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="slide-link"
+            >
+              To-Do Liste (React)
+            </Link>
+            <p>Todo list</p>
           </SwiperSlide>
         </Swiper>
         <div>
@@ -124,86 +188,62 @@ const Portfolio = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src={require("./eurostarav.png")} alt="" />
+            <img src={require("../../images/1euro.png")} alt="" />
             <Link
-              to="https://github.com/DrCetmi/ShrugmanGame"
+              to="https://eurostaraviation.eu"
               target="_blank"
               rel="noopener noreferrer"
               className="slide-link"
-            ></Link>
-            <p>
-              Shrugman Game ist ein textbasiertes Spiel, entwickelt in
-              JavaScript und ausgeführt in einer Node.js-Umgebung, bei dem eine
-              Person versucht, ein geheimes Wort zu erraten.
-            </p>
+            >
+              {" "}
+              Eurostar Aviation
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("./hikmet.png")} />
+            <img src={require("../../images/2nfrt.png")} alt="" />
             <Link
               to="https://github.com/DrCetmi/Spotify-Clone"
               target="_blank"
               rel="noopener noreferrer"
               className="slide-link"
             ></Link>
-            <p>
-              Willkommen beim Spotify-Klon-Projekt unter Verwendung der Deezer
-              API(oder Rapid API)! Dieses Projekt zielt darauf ab, einige
-              Funktionen von Spotify mithilfe der Deezer API nachzubilden.
-              Dieses Projekt ist eine Teamleistung.
-            </p>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("./hizmet.png")} />
+            <img src={require("../../images/3hkmt.png")} alt="" />
             <Link
               to="https://github.com/DrCetmi/Netflix-clone"
               target="_blank"
               rel="noopener noreferrer"
               className="slide-link"
-            >
-              hizmetten
-            </Link>
-            <p>
-              Dieses umfangreiche Projekt einer Netflix-Filmanwendung integriert
-              nicht nur die OMDB API für den Abruf von Filmdaten, sondern
-              enthält auch eine lokale Authentifizierung für eine Login-Seite.
-              Ziel ist es, Benutzern eine personalisierte Erfahrung zu bieten,
-              indem sie sich anmelden können, um ihre bevorzugten Filme zu
-              speichern und mit anderen Benutzern zu interagieren.
-            </p>
+            ></Link>
           </SwiperSlide>
 
           <SwiperSlide>
-            <img src={require("./nefret.png")} />
+            <img src={require("../../images/4wrte.png")} alt="" />
             <Link
               to="https://github.com/DrCetmi/Netflix-clone"
               target="_blank"
               rel="noopener noreferrer"
               className="slide-link"
-            >
-              NefretSuçları
-            </Link>
+            ></Link>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            <img src={require("../../images/5hzmt.png")} alt="" />
             <Link
               to="https://github.com/DrCetmi/Netflix-clone"
               target="_blank"
               rel="noopener noreferrer"
               className="slide-link"
-            >
-              İnkişaf
-            </Link>
+            ></Link>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            <img src={require("../../images/6mzn.png")} alt="" />
             <Link
               to="https://github.com/DrCetmi/Netflix-clone"
               target="_blank"
               rel="noopener noreferrer"
               className="slide-link"
-            >
-              mizan
-            </Link>
+            ></Link>
           </SwiperSlide>
         </Swiper>
       </div>
