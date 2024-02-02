@@ -18,7 +18,7 @@ const Skills = () => {
           <div className="inner-content" key={i}>
             <Animate
               play
-              duration={1}
+              duration={0.5}
               delay={0.3}
               start={{ transform: "translateX(-200px)" }}
               end={{ transform: "translateX(0)" }}
@@ -28,7 +28,7 @@ const Skills = () => {
                 {item.data.map((skillItem, j) => (
                   <AnimateKeyframes
                     play
-                    duration={1}
+                    duration={0.5}
                     keyframes={["opacity: 1", "opacity: 0"]}
                     iterationCount="1"
                   >
