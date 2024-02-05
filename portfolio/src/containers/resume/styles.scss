@@ -52,15 +52,18 @@
     }
     .vertical-timeline-element-title-wrapper {
       display: flex;
-      align-items: center;
+      align-items: start;
+      flex-direction: column;
+      justify-content: start;
 
       h3 {
         font-size: 18px;
+        margin: 0;
       }
     }
     p {
       font-size: 16px;
-      line-height: 2rem;
+      line-height: 2.4rem;
     }
     .vertical-timeline-element-content {
       box-shadow: none;

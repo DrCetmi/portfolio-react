@@ -19,16 +19,28 @@ export const skillsData = [
         percentage: "95%",
       },
       {
-        skillsName: "JavaScript",
-        percentage: "95%",
-      },
-      {
         skillsName: "Bootstrap",
         percentage: "90%",
       },
       {
+        skillsName: "JavaScript",
+        percentage: "95%",
+      },
+      {
+        skillsName: "TypeScript",
+        percentage: "70%",
+      },
+      {
         skillsName: "React/Vite",
         percentage: "90%",
+      },
+      {
+        skillsName: "JQuery",
+        percentage: "80%",
+      },
+      {
+        skillsName: "Wordpress",
+        percentage: "99%",
       },
       {
         skillsName: "Adobe(Ps, Ai, Xd, ...)",
@@ -41,18 +53,6 @@ export const skillsData = [
       {
         skillsName: "Material UI",
         percentage: "80%",
-      },
-      {
-        skillsName: "JQuery",
-        percentage: "80%",
-      },
-      {
-        skillsName: "TypeScript",
-        percentage: "70%",
-      },
-      {
-        skillsName: "Wordpress",
-        percentage: "99%",
       },
     ],
   },
