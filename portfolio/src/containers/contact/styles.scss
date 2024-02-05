@@ -139,11 +139,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .contact__content__form {
+  .contact__content {
     text-align: center;
-    &__controlswrapper {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 40px;
-    }
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
   }
 }

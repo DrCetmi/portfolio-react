@@ -37,6 +37,9 @@ const Navbar = () => {
   const handleToggleIcon = () => {
     setToggle(!toggle);
   };
+  const handleMenuClick = () => {
+    setToggle(false);
+  };
 
   return (
     <div>
@@ -52,6 +55,7 @@ const Navbar = () => {
               <Link
                 className="navbar__container__menu__item__links"
                 to={item.to}
+                onClick={handleMenuClick}
               >
                 {item.label}
               </Link>
