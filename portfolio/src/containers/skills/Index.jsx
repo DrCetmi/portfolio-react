@@ -36,10 +36,10 @@ const Skills = () => {
                       <p>{skillItem.skillsName}</p>
                       <Line
                         percent={parseFloat(skillItem.percentage)}
-                        strokeWidth="2"
+                        strokeWidth="4"
                         strokeColor="var(--yellow-theme-main-color)"
                         trailWidth="2"
-                        strokeLinecap="square"
+                        strokeLinecap="round"
                       />
                     </div>
                   </AnimateKeyframes>

@@ -35,6 +35,7 @@ const personelDetails = [
 
 const jobSummary = `Passionierter Full-Stack-Webentwickler. 
 Ich habe umfassende Erfahrung in der Gestaltung und Implementierung komplexer Systeme und bin es gewohnt, in anspruchsvollen Situationen einen logischen und lösungsorientierten Ansatz zu verfolgen. Ich bin stets bestrebt, meine Fähigkeiten weiterzuentwickeln und neue Erfahrungen zu sammeln. Ich verfolge die aktuellen Entwicklungen in der Webentwicklung und halte mich über neue Trends und Best Practices auf dem Laufenden. Dabei bin ich immer offen für neue Herausforderungen und möchte mein Wissen und meine Fähigkeiten stetig erweitern. Wenn Sie auf der Suche nach einem engagierten Full-Stack-Webentwickler sind, der über umfangreiche Kenntnisse und Erfahrung verfügt und bereit ist, neue Herausforderungen anzunehmen, stehe ich Ihnen gerne zur Verfügung.`;
+
 const About = () => {
   return (
     <section id="about" className="about">
