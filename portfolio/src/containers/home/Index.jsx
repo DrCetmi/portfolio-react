@@ -46,7 +46,7 @@ const Home = () => {
           <div className="home__contact-me">
             {/* <button onClick={handleNavigateToContactMePAge}>Hire Me</button> */}
             <button>
-              <Link to="/myresume.pdf" target="_blank">
+              <Link to="/my-resume-DC.pdf" target="_blank">
                 Download Resume
               </Link>
             </button>
