@@ -76,15 +76,6 @@ const Home = () => {
           <img src={require("../../images/hero11.png")} />
         </div>
       </div>
-<<<<<<< HEAD
-
-      <About />
-      <Skills />
-      <Resume />
-      <Portfolio />
-      <Contact />
-=======
->>>>>>> durmus
     </section>
   );
 };
