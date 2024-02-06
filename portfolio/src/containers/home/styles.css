@@ -41,6 +41,7 @@
   justify-content: center;
   align-items: start;
   margin: 10px 50px;
+  gap: 20px;
 }
 .home__contact-me button {
   cursor: pointer;
@@ -52,9 +53,14 @@
   border-radius: 4px;
   font-weight: 500;
 }
-.home__contact-me button:hover {
+.home__contact-me button:hover,
+.home__contact-me button a:hover {
   background: var(--yellow-theme-main-color);
   color: #000000;
+}
+.home__contact-me a {
+  text-decoration: none;
+  color: var(--yellow-theme-main-color);
 }
 .home__img-home img {
   width: 100%;

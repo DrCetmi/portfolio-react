@@ -9,14 +9,16 @@ import "./styles.scss";
 const Skills = () => {
   return (
     <div id="skills" className="skills">
-      <PageHeaderContent headerText="My Skills" />
-
+      <PageHeaderContent
+        headerText="My Skills"
+        icon={<BsInfoCircleFill size={40} />}
+      />
       <div className="content-wrapper">
         {skillsData.map((item, i) => (
           <div className="inner-content" key={i}>
             <Animate
               play
-              duration={1}
+              duration={0.5}
               delay={0.3}
               start={{ transform: "translateX(-200px)" }}
               end={{ transform: "translateX(0)" }}
@@ -26,7 +28,7 @@ const Skills = () => {
                 {item.data.map((skillItem, j) => (
                   <AnimateKeyframes
                     play
-                    duration={1}
+                    duration={0.5}
                     keyframes={["opacity: 1", "opacity: 0"]}
                     iterationCount="1"
                   >
@@ -34,10 +36,10 @@ const Skills = () => {
                       <p>{skillItem.skillsName}</p>
                       <Line
                         percent={parseFloat(skillItem.percentage)}
-                        strokeWidth="2"
+                        strokeWidth="4"
                         strokeColor="var(--yellow-theme-main-color)"
                         trailWidth="2"
-                        strokeLinecap="square"
+                        strokeLinecap="round"
                       />
                     </div>
                   </AnimateKeyframes>

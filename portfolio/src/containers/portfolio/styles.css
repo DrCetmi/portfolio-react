@@ -7,7 +7,6 @@
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-bottom: 0;
 }
 
 .swiper-slide {
@@ -20,7 +19,14 @@
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .swiper-slide img:hover {
@@ -54,4 +60,14 @@
 
 .slide-link:hover {
   color: var(--yellow-theme-main-color);
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--yellow-theme-main-color);
+  margin-top: 50px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */

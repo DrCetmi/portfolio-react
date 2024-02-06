@@ -21,10 +21,10 @@ const data = [
     label: "My Resume",
     to: "/resume",
   },
-  // {
-  //   label: 'Portfolio',
-  //   to: '/portfolio'
-  // },
+  {
+    label: "Portfolio",
+    to: "/portfolio",
+  },
   {
     label: "Contact",
     to: "/contact",
@@ -36,6 +36,9 @@ const Navbar = () => {
 
   const handleToggleIcon = () => {
     setToggle(!toggle);
+  };
+  const handleMenuClick = () => {
+    setToggle(false);
   };
 
   return (
@@ -52,6 +55,7 @@ const Navbar = () => {
               <Link
                 className="navbar__container__menu__item__links"
                 to={item.to}
+                onClick={handleMenuClick}
               >
                 {item.label}
               </Link>

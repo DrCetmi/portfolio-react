@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeader/Index";
-// import { BsInfoCircleFill } from "react-icons/bs";
+import { BsInfoCircleFill } from "react-icons/bs";
 import "./styles.scss";
 import { Animate } from "react-simple-animate";
 import { DiApple, DiAndroid } from "react-icons/di";
@@ -35,19 +35,20 @@ const personelDetails = [
 
 const jobSummary = `Passionierter Full-Stack-Webentwickler. 
 Ich habe umfassende Erfahrung in der Gestaltung und Implementierung komplexer Systeme und bin es gewohnt, in anspruchsvollen Situationen einen logischen und lösungsorientierten Ansatz zu verfolgen. Ich bin stets bestrebt, meine Fähigkeiten weiterzuentwickeln und neue Erfahrungen zu sammeln. Ich verfolge die aktuellen Entwicklungen in der Webentwicklung und halte mich über neue Trends und Best Practices auf dem Laufenden. Dabei bin ich immer offen für neue Herausforderungen und möchte mein Wissen und meine Fähigkeiten stetig erweitern. Wenn Sie auf der Suche nach einem engagierten Full-Stack-Webentwickler sind, der über umfangreiche Kenntnisse und Erfahrung verfügt und bereit ist, neue Herausforderungen anzunehmen, stehe ich Ihnen gerne zur Verfügung.`;
+
 const About = () => {
   return (
     <section id="about" className="about">
       <PageHeaderContent
         headerText="About Me"
-        // icon={<BsInfoCircleFill size={40} />}
+        icon={<BsInfoCircleFill size={40} />}
       />
       <Animate
         play
-        duration={1.5}
-        delay={1}
+        duration={1}
+        delay={0.3}
         start={{
-          transform: "translateY(500px)",
+          transform: "translatex(1000px)",
         }}
         end={{
           transform: "translatex(0px)",
@@ -68,8 +69,8 @@ const About = () => {
         <div className="about__content__personalWrapper">
           <Animate
             play
-            duration={1.5}
-            delay={1}
+            duration={1}
+            delay={0.3}
             start={{
               transform: "translateX(-900px)",
             }}
@@ -91,8 +92,8 @@ const About = () => {
         <div className="about__content__servicesWrapper">
           <Animate
             play
-            duration={1.5}
-            delay={1}
+            duration={1}
+            delay={0.3}
             start={{
               transform: "translateX(600px)",
             }}
