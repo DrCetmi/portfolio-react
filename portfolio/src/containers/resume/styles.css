@@ -51,14 +51,17 @@
 }
 .timeline__experience .vertical-timeline-element-title-wrapper, .timeline__education .vertical-timeline-element-title-wrapper {
   display: flex;
-  align-items: center;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
 }
 .timeline__experience .vertical-timeline-element-title-wrapper h3, .timeline__education .vertical-timeline-element-title-wrapper h3 {
   font-size: 18px;
+  margin: 0;
 }
 .timeline__experience p, .timeline__education p {
   font-size: 16px;
-  line-height: 2rem;
+  line-height: 2.4rem;
 }
 .timeline__experience .vertical-timeline-element-content, .timeline__education .vertical-timeline-element-content {
   box-shadow: none;
