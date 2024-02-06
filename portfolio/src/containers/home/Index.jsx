@@ -81,10 +81,11 @@ const Home = () => {
           <img src={require("./hero11.png")} />
         </div>
       </div>
-      <Portfolio />
+
       <About />
       <Skills />
       <Resume />
+      <Portfolio />
       <Contact />
     </section>
   );
