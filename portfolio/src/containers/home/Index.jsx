@@ -39,7 +39,7 @@ const Home = () => {
           start={{
             transform: "translateY(550px)",
           }}
-          ende={{
+          end={{
             transform: "translatex(0px)",
           }}
         >

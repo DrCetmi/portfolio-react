@@ -7,7 +7,7 @@ import Skills from './containers/skills/Index';
 import Portfolio from './containers/portfolio/Index';
 import Contact from './containers/contact/Index';
 import Navbar from './components/navBar/Index';
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; 
 import usePartickesOptions from './partickesOptions';
@@ -28,7 +28,6 @@ function App() {
   const particlesLoaded = (container) => {
     console.log(container);
   };
-  // const renderParticleJsInHomePage = location.pathname === "/";
   const options = usePartickesOptions();
   if (init) {
     return (
