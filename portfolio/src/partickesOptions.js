@@ -32,10 +32,10 @@ const usePartickesOptions = () => {
       },
       particles: {
         color: {
-          value: "#ffdd40",
+          value: "#ffffff",
         },
         links: {
-          color: "#ffffff",
+          color: "#ffdd40",
           distance: 150,
           enable: true,
           opacity: 0.5,

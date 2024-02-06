@@ -1,15 +1,15 @@
 import React from "react";
 import "./styles.scss";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
 import TypedText from "./TypedText";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
-  const navigate = useNavigate();
-  const handleNavigateToContactMePAge = () => {
-    navigate("/contact");
-  };
+  // const navigate = useNavigate();
+  // const handleNavigateToContactMePAge = () => {
+  //   navigate("/contact");
+  // };
   const handleNavigateToGitHub = () => {
     const githubUrl = "https://github.com/drcetmi";
     window.open(githubUrl, "_blank");
@@ -37,14 +37,19 @@ const Home = () => {
           duration={1.5}
           delay={1}
           start={{
-            transform: "translateY(750px)",
+            transform: "translateY(550px)",
           }}
           ende={{
             transform: "translatex(0px)",
           }}
         >
           <div className="home__contact-me">
-            <button onClick={handleNavigateToContactMePAge}>Hire Me</button>
+            {/* <button onClick={handleNavigateToContactMePAge}>Hire Me</button> */}
+            <button>
+              <Link to="/myresume.pdf" target="_blank">
+                Download Resume
+              </Link>
+            </button>
           </div>
         </Animate>
         <Animate
