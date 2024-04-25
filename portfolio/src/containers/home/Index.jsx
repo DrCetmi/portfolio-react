@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.scss";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Animate } from "react-simple-animate";
 import TypedText from "./TypedText";
 import { FaGithub, FaLinkedin } from "react-icons/fa";

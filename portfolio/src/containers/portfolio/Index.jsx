@@ -1,4 +1,4 @@
-import PageHeaderContent from "../../components/pageHeader/Index";
+import PageHeaderContent from "../../components/pageHeader/Index.jsx";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
