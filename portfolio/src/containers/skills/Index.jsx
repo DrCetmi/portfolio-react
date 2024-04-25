@@ -38,7 +38,7 @@ const Skills = () => {
                         percent={parseFloat(skillItem.percentage)}
                         strokeWidth="4"
                         strokeColor="var(--yellow-theme-main-color)"
-                        trailWidth="2"
+                        trailWidth="4"
                         strokeLinecap="round"
                       />
                     </div>
