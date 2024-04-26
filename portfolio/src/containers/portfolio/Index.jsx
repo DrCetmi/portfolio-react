@@ -1,5 +1,5 @@
-import PageHeaderContent from "../../components/pageHeader/Index.jsx";
-import { BsInfoCircleFill } from "react-icons/bs";
+// import PageHeaderContent from "../../components/pageHeader/Index.jsx";
+// import { BsInfoCircleFill } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -12,10 +12,10 @@ import { Animate } from "react-simple-animate";
 const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio">
-      <PageHeaderContent
+      {/* <PageHeaderContent
         headerText="Portfolio"
         icon={<BsInfoCircleFill size={40} />}
-      />
+      /> */}
       <div className="slide">
         <Animate
           play

@@ -1,6 +1,6 @@
 import React from "react";
-import PageHeaderContent from "../../components/pageHeader/Index.jsx";
-import { BsInfoCircleFill } from "react-icons/bs";
+// import PageHeaderContent from "../../components/pageHeader/Index.jsx";
+// import { BsInfoCircleFill } from "react-icons/bs";
 import "./styles.scss";
 import { Animate } from "react-simple-animate";
 import { DiApple, DiAndroid } from "react-icons/di";
@@ -39,10 +39,10 @@ Ich habe umfassende Erfahrung in der Gestaltung und Implementierung komplexer Sy
 const About = () => {
   return (
     <section id="about" className="about">
-      <PageHeaderContent
+      {/* <PageHeaderContent
         headerText="About Me"
         icon={<BsInfoCircleFill size={40} />}
-      />
+      /> */}
       <Animate
         play
         duration={1}
